@@ -1,6 +1,5 @@
 from django.conf.urls import url
-
-from . import views
+from api import views
 
 urlpatterns = [
     url(r'^units/$', views.UnitList.as_view()),

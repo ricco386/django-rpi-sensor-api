@@ -1,6 +1,5 @@
 from rest_framework import generics
 from rest_framework import permissions
-
 from gui.models import Unit, Sensor, Node, Measurement
 from api.serializers import UnitSerializer, SensorSerializer, NodeSerializer, MeasurementSerializer
 
