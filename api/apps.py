@@ -4,4 +4,4 @@ from django.apps import AppConfig
 
 
 class DjangoRpiDhtApiConfig(AppConfig):
-    name = 'django_rpi_dht_api'
+    name = 'api'
