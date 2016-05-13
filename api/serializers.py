@@ -17,7 +17,7 @@ class SensorSerializer(serializers.ModelSerializer):
 class NodeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Node
-        fields = ('name', 'head', 'token', 'sensors')
+        fields = ('name', 'token', 'desc', 'location', 'ip', 'sensors')
 
 
 class MeasurementSerializer(serializers.ModelSerializer):
