@@ -16,6 +16,7 @@ class UnitDetail(generics.RetrieveUpdateDestroyAPIView):
 
     queryset = Unit.objects.all()
     serializer_class = UnitSerializer
+    lookup_field = 'name'
 
 
 class SensorList(generics.ListCreateAPIView):
@@ -30,6 +31,7 @@ class SensorDetail(generics.RetrieveUpdateDestroyAPIView):
 
     queryset = Sensor.objects.all()
     serializer_class = SensorSerializer
+    lookup_field = 'name'
 
 
 class NodeList(generics.ListCreateAPIView):
@@ -40,6 +42,7 @@ class NodeList(generics.ListCreateAPIView):
 class NodeDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Node.objects.all()
     serializer_class = NodeSerializer
+    lookup_field = 'name'
 
 
 class MeasurementList(generics.ListCreateAPIView):
