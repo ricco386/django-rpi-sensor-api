@@ -5,19 +5,20 @@ from rest_framework import serializers
 class UnitSerializer(serializers.ModelSerializer):
     class Meta:
         model = Unit
-        fields = ('name',)
+        fields = ('id', 'name',)
 
 
 class SensorSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Sensor
-        fields = ('name', 'units')
+        fields = ('id', 'name', 'units')
 
 
 class NodeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Node
-        fields = ('name', 'token', 'desc', 'location', 'ip', 'sensors')
+        fields = ('id', 'name', 'token', 'desc', 'location', 'ip', 'sensors')
 
 
 class MeasurementSerializer(serializers.ModelSerializer):
